@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "isort.args": [
+        "--settings-path",
+        "${workspaceFolder}/pyproject.toml"
+    ],
+    "black-formatter.args": [
+        "--config",
+        "${workspaceFolder}/pyproject.toml"
+    ],
+}

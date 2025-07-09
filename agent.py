@@ -11,9 +11,7 @@ fast = FastAgent("fast-agent example")
 
 
 # Define the agent
-@fast.agent(
-    instruction="You are a helpful AI Agent", servers=["fetch", "filesystem", "weather"]
-)
+@fast.agent(instruction="You are a professional Coding AI Agent", servers=["fetch", "system"])
 async def main():
     """Main function for the FastAgent example."""
     async with fast.run() as agent:

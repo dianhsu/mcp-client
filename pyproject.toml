@@ -5,5 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fast-agent-mcp>=0.2.40",
+    "fast-agent-mcp[azure]>=0.2.40",
+    "loguru>=0.7.3",
+    "mcp>=1.10.1",
 ]
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
