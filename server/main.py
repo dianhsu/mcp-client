@@ -94,6 +94,14 @@ def write_file(path: str, content: str) -> str:
         return f"Error writing to {path}: {str(e)}"
 
 
+@mcp.tool()
+def get_current_working_directory() -> str:
+    """
+    Returns the current working directory.
+    """
+    return os.getcwd()
+
+
 # @mcp.tool()
 # def set_cwd(path: str) -> str:
 #     """

@@ -5,11 +5,12 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "name": "Start Agent",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/agent.py",
+            "program": "${workspaceFolder}/main.py",
             "console": "integratedTerminal"
         }
     ]
